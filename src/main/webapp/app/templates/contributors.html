@@ -1,0 +1,10 @@
+<h2>EmberJS 贡献者:</h2>
+<br/>
+<ul>
+	{{#each person in controller}}
+		<li>
+		   <a {{action showContributor person href=true }}> {{person.login}} </a>
+		 
+		</li>
+	{{/each}}
+</ul>
